@@ -1,29 +1,7 @@
-name: VS2022
+name: VS2022 manual test
 
-on: 
-  push:
-    paths-ignore:
-      - '.gitignore'
-      - '.gitattributes'
-      - 'res/**'
-      - '**.cmd'
-      - '**.md'
-      - '**.rc'
-      - '**.sh'
-      - '**.txt'
-      - '**.xml'
-  pull_request:
-    branches: [master]
-    paths-ignore:
-      - '.gitignore'
-      - '.gitattributes'
-      - 'res/**'
-      - '**.cmd'
-      - '**.md'
-      - '**.rc'
-      - '**.sh'
-      - '**.txt'
-      - '**.xml'
+on: workflow_dispatch
+
 
 env:
   SOLUTION_FILE_PATH: ./rufus.sln
